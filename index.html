@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Água Vitae — Apresentação</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <div class="progress-bar" id="progressBar"></div>
+  <div class="slide-counter" id="slideCounter">
+    <span id="currentNum">1</span><span class="sep">/</span><span id="totalNum">15</span>
+  </div>
+  <div class="key-hint" id="keyHint">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+    <span>Seta direita ou Espaço para avançar</span>
+  </div>
+  <button class="nav-arrow nav-prev" id="navPrev" aria-label="Voltar">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <button class="nav-arrow nav-next" id="navNext" aria-label="Avançar">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+  </button>
+  <div class="slide-dots" id="slideDots"></div>
+
+  <div class="presentation" id="presentation">
+
+    <!-- SLIDE 1 · CAPA -->
+    <section class="slide" data-slide="1">
+      <div class="bg bg-cover"></div>
+      <div class="particles"></div>
+      <div class="sc center">
+        <div class="brand" data-step="0"><span class="ba">ÁGUA</span><span class="bv">VITAE</span></div>
+        <p class="tag-line" data-step="1">No coração do Maranhão &nbsp;·&nbsp; Em Santa Inês</p>
+        <h1 class="cover-h" data-step="2">Nasce um novo marco<br />de desenvolvimento.</h1>
+        <p class="cover-sub" data-step="3">Uma descoberta natural extraordinária.</p>
+      </div>
+    </section>
+
+    <!-- SLIDE 2 · A DESCOBERTA -->
+    <section class="slide" data-slide="2">
+      <div class="bg bg-deep"></div>
+      <div class="sc center">
+        <p class="s-tag" data-step="1">A Descoberta</p>
+        <h2 class="xl white" data-step="2">Uma fonte rara.</h2>
+        <h2 class="xl accent italic" data-step="3">Uma fonte de vida.</h2>
+        <p class="s-caption muted" data-step="4">Captada de formação geológica privilegiada no interior do Maranhão,<br />a Água Vitae traz à superfície o que a terra levou séculos para criar.</p>
+      </div>
+    </section>
+
+    <!-- SLIDE 3 · pH 7,40 -->
+    <section class="slide" data-slide="3">
+      <div class="bg bg-blue"></div>
+      <div class="sc center">
+        <p class="s-tag" data-step="1">O Produto</p>
+        <p class="s-label" data-step="2">Água Mineral Natural</p>
+        <div class="ph-hero" data-step="3"><span class="ph-n">7,40</span><span class="ph-u">pH</span></div>
+        <h2 class="xl white" data-step="4">Equilíbrio perfeito.</h2>
+        <div class="trio" data-step="5"><span>Leve.</span><span>Pura.</span><span>Saudável.</span></div>
+      </div>
+    </section>
+
+    <!-- SLIDE 4 · A FONTE MODERNA -->
+    <section class="slide slide-fonte" data-slide="4">
+      <div class="bg bg-cover">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1920&q=80" alt="Fonte moderna" class="bg-img" data-step="1" />
+      </div>
+      <div class="photo-dim" data-step="1"></div>
+      <div class="sc center">
+        <p class="s-tag" data-step="2">A Fonte</p>
+        <h2 class="xl white" data-step="3">Poço artesiano moderno<br />de alta tecnologia.</h2>
+        <div class="fonte-pills" data-step="4">
+          <div class="fpill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Obedece todas as exigências<br />dos órgãos reguladores</span>
+          </div>
+          <div class="fpill" data-step="5">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/></svg>
+            <span>Baseado em modelos<br />internacionais</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 5 · LOCALIZAÇÃO — MAPA -->
+    <section class="slide slide-map" data-slide="5">
+      <div class="bg bg-deep"></div>
+      <div class="map-container" data-step="1">
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-45.56%2C-3.72%2C-45.24%2C-3.58&layer=mapnik&marker=-3.633%2C-45.416" title="Localização Água Vitae — BR-222, km 6, Santa Inês MA" loading="lazy" allowfullscreen></iframe>
+      </div>
+      <div class="map-overlay" data-step="2">
+        <div class="map-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <div>
+            <strong>BR-222, km 6 — sentido Santa Luzia</strong>
+            <span>Ao lado do maior Posto de Santa Inês</span>
+            <span>Santa Inês, Maranhão — Brasil</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 6 · FOTO — GALPÃO EXTERIOR 1 -->
+    <section class="slide slide-photo" data-slide="6">
+      <div class="bg"><img src="images/exterior-1.jpg" alt="Galpão exterior — Água Vitae" class="bg-img photo-full" data-step="1" /></div>
+      <div class="photo-dim" data-step="1"></div>
+      <div class="sc bottom">
+        <div class="photo-cap" data-step="2">
+          <span class="pnum">01</span>
+          <div><h3>O Complexo Produtivo</h3><p>Vista exterior do galpão principal — Santa Inês, Maranhão</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 7 · FOTO — GALPÃO EXTERIOR 2 -->
+    <section class="slide slide-photo" data-slide="7">
+      <div class="bg"><img src="images/exterior-2.jpg" alt="Galpão exterior — estrutura" class="bg-img photo-full" data-step="1" /></div>
+      <div class="photo-dim" data-step="1"></div>
+      <div class="sc bottom">
+        <div class="photo-cap" data-step="2">
+          <span class="pnum">02</span>
+          <div><h3>Estrutura Perimetral</h3><p>Alvenaria estrutural com colunas em concreto armado — obra em fase final</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 8 · FOTO — INTERIOR 1 -->
+    <section class="slide slide-photo" data-slide="8">
+      <div class="bg"><img src="images/interior-1.jpg" alt="Interior do galpão — treliças" class="bg-img photo-full" data-step="1" /></div>
+      <div class="photo-dim photo-dim-bottom" data-step="1"></div>
+      <div class="sc bottom">
+        <div class="photo-cap" data-step="2">
+          <span class="pnum">03</span>
+          <div><h3>Cobertura Metálica</h3><p>Treliças em aço galvanizado de alta resistência — vão interno de grande porte</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 9 · FOTO — INTERIOR 2 -->
+    <section class="slide slide-photo" data-slide="9">
+      <div class="bg"><img src="images/interior-2.jpg" alt="Vão interno do galpão" class="bg-img photo-full" data-step="1" /></div>
+      <div class="photo-dim photo-dim-bottom" data-step="1"></div>
+      <div class="sc center-right">
+        <div class="impact-text" data-step="2">
+          <p class="s-tag">Infraestrutura</p>
+          <h2 class="xl white">Pronto para<br />produção<br />em larga escala.</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 10 · RESERVATÓRIOS INOX -->
+    <section class="slide slide-reserv" data-slide="10">
+      <div class="bg bg-cover">
+        <img src="https://images.unsplash.com/photo-1611270629569-8b357cb88da9?auto=format&fit=crop&w=1920&q=80" alt="Reservatórios inox" class="bg-img" data-step="1" />
+      </div>
+      <div class="photo-dim photo-dim-heavy" data-step="1"></div>
+      <div class="sc center">
+        <p class="s-tag" data-step="2">Reservatórios</p>
+        <div class="twin-stat" data-step="3">
+          <div class="twin-item"><span class="twin-n">2</span><span class="twin-l">reservatórios</span></div>
+          <div class="twin-div">×</div>
+          <div class="twin-item"><span class="twin-n">60<small>mil</small></span><span class="twin-l">litros cada</span></div>
+        </div>
+        <p class="s-label accent" data-step="4">Aço Inoxidável — INOX</p>
+        <p class="s-caption muted" data-step="5">Higiene e conservação total da água desde a captação até o envase.</p>
+      </div>
+    </section>
+
+    <!-- SLIDE 11 · LINHA DE PRODUÇÃO -->
+    <section class="slide slide-prod" data-slide="11">
+      <div class="bg bg-cover">
+        <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1920&q=80" alt="Linha de produção de água" class="bg-img" data-step="1" />
+      </div>
+      <div class="photo-dim photo-dim-heavy" data-step="1"></div>
+      <div class="sc center">
+        <p class="s-tag" data-step="2">Linha de Produção</p>
+        <div class="prod-hero" data-step="3"><span class="prod-n">1.600</span><span class="prod-u">garrafões / hora</span></div>
+        <div class="prod-pills" data-step="4">
+          <div class="ppill"><strong>Capacidade</strong><span>Imediata ao início da operação</span></div>
+          <div class="ppill" data-step="5"><strong>Escalável</strong><span>Estrutura dimensionada para expansão</span></div>
+          <div class="ppill" data-step="6"><strong>Tecnologia</strong><span>Equipamentos modernos de envasamento</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 12 · CONFORMIDADE REGULATÓRIA -->
+    <section class="slide" data-slide="12">
+      <div class="bg bg-dark"></div>
+      <div class="sc center">
+        <p class="s-tag" data-step="1">Qualidade &amp; Conformidade</p>
+        <h2 class="xl white" data-step="2">Toda a captação obedece<br />as exigências dos<br />órgãos reguladores.</h2>
+        <div class="reg-pills" data-step="3">
+          <div class="rpill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+            <span>Regulamentação DNPM / CPRM</span>
+          </div>
+          <div class="rpill" data-step="4">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/></svg>
+            <span>Baseado em modelos internacionais</span>
+          </div>
+          <div class="rpill" data-step="5">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 11.08 22 12 12 17 2 12V6l10-5 10 5v6z"/><polyline points="2 12 12 17 22 12"/></svg>
+            <span>pH 7,40 — Análise laboratorial</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 13 · FASE FINAL -->
+    <section class="slide" data-slide="13">
+      <div class="bg bg-blue"></div>
+      <div class="sc center">
+        <p class="s-tag" data-step="1">Status da Obra</p>
+        <h2 class="xl white" data-step="2">Em fase final<br />de acabamento.</h2>
+        <ul class="check-list" data-step="3">
+          <li data-step="3"><span class="ck">✓</span>Poço artesiano moderno — concluído</li>
+          <li data-step="4"><span class="ck">✓</span>2 reservatórios INOX 60.000 L — instalados</li>
+          <li data-step="5"><span class="ck">✓</span>Galpão de grande porte — estrutura finalizada</li>
+          <li data-step="6"><span class="ck">✓</span>Linha de produção 1.600 garrafões/hora — em implantação</li>
+          <li data-step="7"><span class="ck">✓</span>Pronto para expansão comercial em larga escala</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SLIDE 14 · INVESTIMENTO -->
+    <section class="slide" data-slide="14">
+      <div class="bg bg-cover"></div>
+      <div class="sc center">
+        <p class="s-tag" data-step="1">Oportunidade de Investimento</p>
+        <h2 class="xl white" data-step="2">Grande potencial<br />de expansão.</h2>
+        <div class="invest-block" data-step="3">
+          <span class="ix">4×</span>
+          <div><strong>Rentabilidade projetada</strong><p>Até 4 vezes superior à caderneta de poupança</p></div>
+        </div>
+        <p class="s-caption accent-soft" data-step="4">+ Valorização patrimonial da empresa ao longo do tempo</p>
+        <p class="s-caption muted small" data-step="5">Empresa com base física construída · Mercado em crescimento constante · Fase final de implantação</p>
+      </div>
+    </section>
+
+    <!-- SLIDE 15 · CONTATO -->
+    <section class="slide" data-slide="15">
+      <div class="bg bg-deep"></div>
+      <div class="sc center">
+        <div class="brand small" data-step="0"><span class="ba">ÁGUA</span><span class="bv">VITAE</span></div>
+        <h2 class="xl white" data-step="1">Faça parte<br />desta história.</h2>
+        <p class="s-caption muted" data-step="2">Entre em contato com nossa equipe para investimento, parcerias e distribuição.</p>
+        <div class="contact-list" data-step="3">
+          <div class="cl-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            <span>BR-222, km 6 &mdash; ao lado do maior Posto de Santa Inês, MA</span>
+          </div>
+          <div class="cl-item" data-step="4">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.1-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1l-1.3 1.3a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg>
+            <span>contato@aguavitae.com.br</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
